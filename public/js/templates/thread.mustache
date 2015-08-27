@@ -1,21 +1,17 @@
-  <div class="thread">
-    <div class="thread-details">
-      <p>
-        <b>{{name}}</b>
-      </p>
-      <p>
-        {{postedby}}
-      </p>
-      </p>
+<div class="thread">
+  {{>includes/threadDetails}}
+  
+  {{#comments}}
+    <div class="comment">
+      <div class="comment-authorDetails">
+        <h4 class="comment-authorDetails-name">{{postedby}}</h4>
+        <p class="comment-authorDetails-timeCreated">
+          {{created}}
+        </p>
+      </div>
+      <div class="comment-content">
+        {{{content}}}
+      </div>
     </div>
-    <div class="thread-urlname">{{urlname}}</div>
-  </div>
-{{#comments}}
-  <div class="comment">
-    <h4>{{postedby}}</h4>
-    <p>
-      <small>{{created}}</small>
-    </p>
-    {{{content}}}
-  </div>
-{{/comments}}
+  {{/comments}}
+</div>

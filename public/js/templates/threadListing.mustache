@@ -1,14 +1,5 @@
+<div class="threadListing">
 {{#threads}}
-  <div class="thread">
-    <div class="thread-details">
-      <p>
-        <b>{{name}}</b>
-      </p>
-      <p>
-        {{postedby}}
-      </p>
-      </p>
-    </div>
-    <div class="thread-urlname">{{urlname}}</div>
-  </div>
+  {{>includes/threadDetails}}
 {{/threads}}
+</div>
