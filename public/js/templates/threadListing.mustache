@@ -1,5 +1,8 @@
 <div class="threadListing">
-{{#threads}}
-  {{>includes/threadDetails}}
-{{/threads}}
+  {{#threads}}
+  <div class="threadDetails">
+    <p class="threadDetails-title"><a class="threadDetails-urlLink" href="{{urlname}}">{{name}}</a></p>
+    <p class="threadDetails-author">{{postedby}}</p>
+  </div>
+  {{/threads}}
 </div>

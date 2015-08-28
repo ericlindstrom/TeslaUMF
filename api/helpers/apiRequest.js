@@ -1,6 +1,7 @@
 'use strict';
 
 var request = require('request');
+var Promise = require('promise');
 var apiRoot = 'http://localhost:3100';
 
 module.exports = function apiRequest(options){
